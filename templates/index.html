@@ -1,15 +1,16 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+	{% load static %}
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Free Bootstrap Themes by Zerotheme dot com - Free Responsive Html5 Templates">
 	<meta name="author" content="https://www.Zerotheme.com">
 
-	<title>Kingfisher | Free Bootstrap Chocolate Templates</title>
+	<title>Lets go David</title>
 
 	<!-- Bootstrap Core CSS -->
 	<link href="{% static 'bootstrap.min.css' %}" rel="stylesheet" type="text/css">
@@ -43,10 +44,10 @@
 		<div class="container text-center">
 			<a class="site-branding" href="index.html">
 				<h1 class="site-title">
-					Kingfisher
+					Lets go David
 				</h1>
 				<p class="site-description">
-					Vestibulum posuere molestie risus
+					Petit site avec Django
 				</p>
 			</a><!-- .site-branding -->
 		</div>
@@ -61,47 +62,9 @@
 					</div>
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="index.html">Home</a></li>
-							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Account</a>
-								<div class="dropdown-menu">
-									<div class="dropdown-inner">
-										<ul class="list-unstyled">
-											<li><a href="#">Login</a></li>
-											<li><a href="#">Register</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="dropdown"><a href="archive.html" class="dropdown-toggle"
-									data-toggle="dropdown">Category</a>
-								<div class="dropdown-menu" style="margin-left: -203.625px;">
-									<div class="dropdown-inner">
-										<ul class="list-unstyled">
-											<li><a href="#">Text 301</a></li>
-											<li><a href="#">Text 302</a></li>
-											<li><a href="#">Text 303</a></li>
-											<li><a href="#">Text 304</a></li>
-											<li><a href="#">Text 305</a></li>
-										</ul>
-										<ul class="list-unstyled">
-											<li><a href="#">Text 306</a></li>
-											<li><a href="#">Text 307</a></li>
-											<li><a href="#">Text 308</a></li>
-											<li><a href="#">Text 309</a></li>
-											<li><a href="#">Text 310</a></li>
-										</ul>
-										<ul class="list-unstyled">
-											<li><a href="#">Text 311</a></li>
-											<li><a href="#">Text 312</a></li>
-											<li><a href="#">Text 313</a></li>
-											<li><a href="#">Text 314</a></li>
-											<li><a href="#">Text 315</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li><a href="archive.html">Blog</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="http://127.0.0.1:8000/">Home</a></li>
+							<li><a href="http://127.0.0.1:8000/blog">Blog</a></li>
+							<li><a href="http://127.0.0.1:8000/contact">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -121,7 +84,7 @@
 				<div class="">
 					<div class="col-lg-12 col-sm-12">
 						<a class="portfolio-box" href="single.html">
-							<img src="{% static 'images/images/1.jpg' %}" class="img-responsive" />
+							<img src="{% static 'images/1.jpg' %}" class="img-responsive" />
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-caption-content">
 									<div class="project-name">
@@ -136,7 +99,7 @@
 					</div>
 					<div class="col-lg-4 col-sm-6">
 						<a class="portfolio-box" href="single.html">
-							<img src="images/2.jpg" class="img-responsive" />
+							<img src="{% static 'images/2.jpg' %}" class="img-responsive" />
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-caption-content">
 									<div class="project-name">
@@ -151,7 +114,7 @@
 					</div>
 					<div class="col-lg-4 col-sm-6">
 						<a class="portfolio-box" href="single.html">
-							<img src="images/3.jpg" class="img-responsive" />
+							<img src="{% static 'images/3.jpg' %}" class="img-responsive" />
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-caption-content">
 									<div class="project-name">
@@ -166,7 +129,7 @@
 					</div>
 					<div class="col-lg-4 col-sm-6">
 						<a class="portfolio-box" href="single.html">
-							<img src="images/4.jpg" class="img-responsive" />
+							<img src="{% static 'images/4.jpg' %}" class="img-responsive" />
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-caption-content">
 									<div class="project-name">
@@ -181,7 +144,7 @@
 					</div>
 					<div class="col-lg-4 col-sm-6">
 						<a class="portfolio-box" href="single.html">
-							<img src="images/5.jpg" class="img-responsive" />
+							<img src="{% static 'images/5.jpg' %}" class="img-responsive" />
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-caption-content">
 									<div class="project-name">
@@ -196,7 +159,7 @@
 					</div>
 					<div class="col-lg-4 col-sm-6">
 						<a class="portfolio-box" href="single.html">
-							<img src="images/6.jpg" class="img-responsive" />
+							<img src="{% static 'images/6.jpg' %}" class="img-responsive" />
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-caption-content">
 									<div class="project-name">
@@ -211,7 +174,7 @@
 					</div>
 					<div class="col-lg-4 col-sm-6">
 						<a class="portfolio-box" href="single.html">
-							<img src="images/7.jpg" class="img-responsive" />
+							<img src="{% static 'images/7.jpg' %}" class="img-responsive" />
 							<div class="portfolio-box-caption">
 								<div class="portfolio-box-caption-content">
 									<div class="project-name">
@@ -240,9 +203,6 @@
 					<li><a href="#">Google +</a></li>
 					<li><a href="#">Pinterest</a></li>
 				</ul>
-				<div class="copyright">
-					<span>Copyright © 20xx - Designed by <a href="https://www.Zerotheme.com">Zerotheme</a></span>
-				</div>
 			</div>
 		</div>
 	</footer>

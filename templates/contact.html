@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	{% load static %}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,14 +10,14 @@
 	
     <title>Kingfisher | Free Bootstrap Chocolate Templates</title>
 	
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	
+	<!-- Bootstrap Core CSS -->
+	<link href="{% static 'bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+
 	<!-- Custom CSS -->
-	<link href="css/style.css" rel="stylesheet">
-	
+	<link href="{% static 'style.css' %}" rel="stylesheet">
+
 	<!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
 	
 	<!-- jQuery and Modernizr-->
 	<script src="js/jquery-2.1.1.js"></script>
@@ -44,61 +45,25 @@
 			</a><!-- .site-branding -->
 		</div>
 		
+	
 		<!--Navigation-->
 		<div id="menu-wrapper">
 			<nav id="menu" class="navbar">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+						<button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse"
+							data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
 					</div>
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="index.html">Home</a></li>
-							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Account</a>
-								<div class="dropdown-menu">
-									<div class="dropdown-inner">
-										<ul class="list-unstyled">
-											<li><a href="#">Login</a></li>
-											<li><a href="#">Register</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li class="dropdown"><a href="archive.html" class="dropdown-toggle" data-toggle="dropdown">Category</a>
-								<div class="dropdown-menu" style="margin-left: -203.625px;">
-									<div class="dropdown-inner">
-										<ul class="list-unstyled">
-											<li><a href="#">Text 301</a></li>
-											<li><a href="#">Text 302</a></li>
-											<li><a href="#">Text 303</a></li>
-											<li><a href="#">Text 304</a></li>
-											<li><a href="#">Text 305</a></li>
-										</ul>
-										<ul class="list-unstyled">
-											<li><a href="#">Text 306</a></li>
-											<li><a href="#">Text 307</a></li>
-											<li><a href="#">Text 308</a></li>
-											<li><a href="#">Text 309</a></li>
-											<li><a href="#">Text 310</a></li>
-										</ul>
-										<ul class="list-unstyled">
-											<li><a href="#">Text 311</a></li>
-											<li><a href="#">Text 312</a></li>
-											<li><a href="#">Text 313</a></li>
-											<li><a href="#">Text 314</a></li>
-											<li><a href="#">Text 315</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li><a href="archive.html">Blog</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="http://127.0.0.1:8000/">Home</a></li>
+							<li><a href="http://127.0.0.1:8000/blog">Blog</a></li>
+							<li><a href="http://127.0.0.1:8000/contact">Contact</a></li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</div>
-		
 	</header>
 	<!-- /Section: intro -->
 	
