@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from .models import Contact
 
 def contact(request):
+    send = ""
     #return HttpResponse('base.html')
     if request.method == "POST":
         contact = Contact()
@@ -16,5 +17,6 @@ def contact(request):
         contact.subject = subject
         contact.message = message
         contact.save()
-        return HttpResponse('<h2>Merci de nous avoir contacté !</h2>')
-    return render(request, 'contact.html')
+        send = 'Merci de nous avoir contacté ! Votre message a bien été reçu'
+        return render(request, 'contact.html', {'send':send})
+    return render(request, 'contact.html', {'send':send})
