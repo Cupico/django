@@ -74,27 +74,16 @@
 		<section class="box-content">
 			<div class="container">
 				<div class="row heading">
-					<div class="col-lg-12">	
+					<div class="col px-0">	
 						<h2>CONTACT US</h2>
-						<div class="intro">Lorem ipsum dolor sit amet</div>
+						<div class="intro">Envoyez un message à Aumaury & David</div>
 					</div>
 				</div>
+				<br/>
 				<div class="row">
-					<!--Start Map-->
-					<div id="map" style="height: 450px;"></div>
-					<!--End Map-->
-					<div class="col-md-4 box-item">
-						<h3>Contact Info</h3>
-						<span>SED UT PERSPICIATIS UNDE OMNIS ISTE NATUS ERROR SIT VOLUPTATEM ACCUSANTIUM DOLOREMQUE LAUDANTIUM, TOTAM REM APERIAM.</span><br> <br>
-						<p>JL.Kemacetan timur no.23. block.Q3<br>
-							Jakarta-Indonesia</p>
-						   <p>+6221 888 888 90 <br>
-							+6221 888 88891</p>
-						<p>info@yourdomain.com</p>
-					</div>
-					<div class="col-md-8">
-						<h3>Contact Form</h3>
-						<form name="form1" method="post" action="contact.php">
+					<div class="col">
+						<form name="form1" method="post">
+							{% csrf_token %}
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
