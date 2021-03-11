@@ -12,6 +12,8 @@ Arborescence générale:
 | |
 |--Contact
 | |
+|--Cv
+| |
 |--mysite
 |
 -manager.py
@@ -20,20 +22,20 @@ Contenu :
 
 1- Page d'accueil:
 
-Banière avec une image d'oiseau et images d'oiseau en dessous
+Une simple homepage, une banière avec une image d'oiseau et d'autres images d'oiseau en dessous.
 
-2- Blog :
+2- Blog projet:
 
-  Articles avec les noms d'oiseaux, leur date de publication (journée année et heure) image et description
+Articles avec les noms d'oiseaux, leur date de publication (journée année et heure), image et description. On les affoche depuis la base de données, où ils sont enregistrés. On peut les éditer/ajouter/supprimer du côté admin, dans la section "Oiseaux". On peut ajouter un oiseau, il va directement être affiche sur le blog.
 
-3- Formulaire de contact: 
+3- Formulaire de contact:
 
-  avec nom, mail, sujet et message
+Avec nom, mail, sujet et message. On les reçoit bien en admin, on peut visualiser tous les formulaires de contact que l'on a reçu du côté admin dans la section "Contact".
 
-4- Candidature: 
+4- Candidature:
 
-  template de CV qu'on peut remplir + description du profil, expériences et compétences
+Template de CV qu'on peut remplir (nom, prénom, description du profil, expériences et compétences... )
 
 Admin:
 
-  en ajoutant /admin derrière l'URL originel du site, on obtient l'accès à la base de données où l'on peut ajouter et supprimer les articles et oiseaux 
+en ajoutant /admin derrière l'URL originel du site, on obtient l'accès à la base de données où l'on peut ajouter et supprimer les articles et oiseaux
