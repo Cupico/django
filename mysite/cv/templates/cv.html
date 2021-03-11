@@ -82,47 +82,48 @@
 	<!-- /////////////////////////////////////////Content -->
 	<div id="page-content">
 
-
 		<!-- CV -->
 		<section class="box-content">
 			<div class="container-fluid">
+				<br />
+				<h2>{{ send }}</h2>
+				<br />
 				<div class="container-cv col-xs-12">
-					<div class="col-xs-6 background-left">
-						<div class="cv-container-left">
-							<img src="{% static 'images/3.jpg' %}" class="img-responsive" />
-							<input type="text" class="form-control input-lg" name="nom" id="nom" placeholder="Nom"
-								required="required" />
-							<input type="text" class="form-control input-lg" name="prenom" id="prenom"
-								placeholder="Prénom" required="required" />
-							<div class="div-contact">
-								<p>Contact</p>
-								<input type="text" class="form-control input-lg" name="numero" id="numero"
-								placeholder="Numéro" required="required" />
-								<input type="text" class="form-control input-lg" name="email" id="email"
-								placeholder="Email" required="required" />
-								<input type="text" class="form-control input-lg" name="adresse" id="adresse"
-								placeholder="Adresse" required="required" />
-							</div>
-							<div class="div-contact">
-								<p>Formation</p>
-								<textarea rows="4" cols="25" style="height: 100px;" type="text"
-								class="form-control input-lg" name="formation" id="formation"
-								placeholder="Formation"
-								required="required"></textarea>
-							</div>
-							<div class="div-contact">
-								<p>Langues</p>
-								<textarea rows="4" cols="25" style="height: 50px;" type="text"
-								class="form-control input-lg" name="Langue" id="Langue"
-								placeholder="Langue(s)"
-								required="required"></textarea>
+					<form name="form2" method="post" enctype="multipart/form-data">
+						{% csrf_token %}
+						<div class="col-xs-6 background-left">
+							<div class="cv-container-left">
+								<input type="file" name="myfile">
+								<img src="{% static 'images/3.jpg' %}" class="img-responsive" />
+								<input type="text" class="form-control input-lg" name="nom" id="nom" placeholder="Nom"
+									required="required" />
+								<input type="text" class="form-control input-lg" name="prenom" id="prenom"
+									placeholder="Prénom" required="required" />
+								<div class="div-contact">
+									<p>Contact</p>
+									<input type="text" class="form-control input-lg" name="numero" id="numero"
+										placeholder="Numéro" required="required" />
+									<input type="text" class="form-control input-lg" name="email" id="email"
+										placeholder="Email" required="required" />
+									<input type="text" class="form-control input-lg" name="adresse" id="adresse"
+										placeholder="Adresse" required="required" />
+								</div>
+								<div class="div-contact">
+									<p>Formation</p>
+									<textarea rows="4" cols="25" style="height: 100px;" type="text"
+										class="form-control input-lg" name="formation" id="formation"
+										placeholder="Formation" required="required"></textarea>
+								</div>
+								<div class="div-contact">
+									<p>Langues</p>
+									<textarea rows="4" cols="25" style="height: 50px;" type="text"
+										class="form-control input-lg" name="langue" id="langue" placeholder="Langue(s)"
+										required="required"></textarea>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-sm-6 background-right">
-						<div class="cv-container-right">
-							<form name="form1" method="post">
-								{% csrf_token %}
+						<div class="col-sm-6 background-right">
+							<div class="cv-container-right">
 								<div class="row">
 									<div class="col-xs-12">
 										<div class="form-group">
@@ -143,9 +144,9 @@
 								<div class="row">
 									<div class="col-xs-12">
 										<div class="form-group">
-											<textarea rows="4" cols="25" style="height: 100px;" type="text" class="form-control input-lg" name="competence"
-												id="competence" placeholder="Competences"
-												required="required"></textarea>
+											<textarea rows="4" cols="25" style="height: 100px;" type="text"
+												class="form-control input-lg" name="competence" id="competence"
+												placeholder="Competences" required="required"></textarea>
 										</div>
 									</div>
 								</div>
@@ -155,9 +156,9 @@
 											id="submitcontact">Envoyer la candidature</button>
 									</div>
 								</div>
-							</form>
+							</div>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</section>

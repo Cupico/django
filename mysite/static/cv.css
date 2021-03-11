@@ -7,7 +7,7 @@
 /* left cv */
 
 .background-left {
-  background-color: #043461;
+  background-color: #043461 !important;
   padding: 30px;
   color: white;
 }
@@ -34,4 +34,12 @@
 .cv-container-right {
   color: black;
   background-color: white;
+}
+
+input[type="text"]{
+  color: black !important;
+}
+
+textarea{
+  color: black !important;
 }
