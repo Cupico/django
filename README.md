@@ -34,8 +34,13 @@ Avec nom, mail, sujet et message. On les reçoit bien en admin, on peut visualis
 
 4- Candidature:
 
-Template de CV qu'on peut remplir (nom, prénom, description du profil, expériences et compétences... )
+Template de CV qu'on peut remplir (nom, prénom, description du profil, expériences et compétences... ). On reçoit ainsi toutes les candidatures du côté admin, dans la section "Cv".
 
 Admin:
 
-en ajoutant /admin derrière l'URL originel du site, on obtient l'accès à la base de données où l'on peut ajouter et supprimer les articles et oiseaux
+Identifiants de connexion : elbardavid / mdp: Dofusien19
+
+En ajoutant /admin derrière l'URL originel du site, on obtient l'accès à la base de données où l'on peut observer, ajouter, éditer et supprimer facilement et simplement toutes les sections citées plus haut (oiseaux, formulaire de contact et candidatures). 
+
+
+Projet réalisé par David Elbar & Aumaury Gimonnet.
