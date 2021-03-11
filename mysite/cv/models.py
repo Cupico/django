@@ -12,7 +12,6 @@ class Cv(models.Model):
     profil = models.CharField(max_length=600)
     experience = models.CharField(max_length=600)
     competence = models.CharField(max_length=600)
-    document = models.FileField(upload_to='documents/')
 
     def __str__(self):
         return self.nom

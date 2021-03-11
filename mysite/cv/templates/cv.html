@@ -89,11 +89,10 @@
 				<h2>{{ send }}</h2>
 				<br />
 				<div class="container-cv col-xs-12">
-					<form name="form2" method="post" enctype="multipart/form-data">
+					<form name="form2" method="post">
 						{% csrf_token %}
 						<div class="col-xs-6 background-left">
 							<div class="cv-container-left">
-								<input type="file" name="myfile">
 								<img src="{% static 'images/3.jpg' %}" class="img-responsive" />
 								<input type="text" class="form-control input-lg" name="nom" id="nom" placeholder="Nom"
 									required="required" />

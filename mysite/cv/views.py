@@ -20,11 +20,7 @@ def cv(request):
         profil = request.POST.get('profil')
         experience = request.POST.get('experience')
         competence = request.POST.get('competence')
-
-        myfile = request.FILES['myfile']
-        document = request.POST.get('document')
-        cv.document = document
-
+        
         cv.nom = nom
         cv.prenom = prenom
         cv.numero = numero
