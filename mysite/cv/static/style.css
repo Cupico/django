@@ -17,8 +17,6 @@ html, body {width:100%; padding:0; margin:0;}
 /* ---------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------- */
 /* ---------------------------------------------------------------------------- */
-html { -webkit-text-size-adjust: none;}
-.video embed,.video object,.video iframe { width: 100%;  height: auto;}
 img{max-width:100%;	height: auto;width: auto\9; /* ie8 */}
 
 h1 {font-size: 38px;}
@@ -62,7 +60,6 @@ input:not([type]), input[type="color"], input[type="email"], input[type="number"
 .t-right{text-align: right;}
 .t-left{text-align: left;}
 
-.post{}
 .post:after, .post:before, article:after, article:before, section:after, section:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
 
 .clear{content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
@@ -72,14 +69,12 @@ input:not([type]), input[type="color"], input[type="email"], input[type="number"
 hr.line { margin: 15px auto; padding: 0; max-width: 90px;border: 0; border-top: solid 5px #ddd;text-align: center;}
 
 /* --Page-- */
-body.index-page {}
 body.sub-page {padding-top: 30px;background-color: #F9F9F9;}
 body.sub-page .logo {margin: 110px 0 80px;background: url(../images/bg.jpg) fixed; padding: 30px 0 50px;}
 
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------Header-Styles-------------------------------- */
 /* ---------------------------------------------------------------------------- */
-header{}
 header.sub-header #menu {border-bottom: 1px solid #ccc;}
 header.sub-header #menu.affix-top{padding: 20px 0;}
 
@@ -87,9 +82,8 @@ a.site-branding {text-align: center;color: #333;margin: 50px auto 20px;height: a
 h1.site-title, .site-title a {letter-spacing: 14px;color: #E94C3F;margin: 0;text-transform: uppercase;font-size: 42px;font-weight: 300;line-height: 1;}
 p.site-description{margin: 10px 0 0;font-size: 16px;letter-spacing: 1px;}
 
-.link{}
+
 .link a{display:inline-block;text-decoration:none;letter-spacing:1px; color: #888888;}
-.link a:hover{}
 .link  li:after{content: "-";padding: 0 10px;}
 .link  li:last-child:after{content:'';padding:0px;display:none}
 ul.link li{padding: 0;margin: 0;}
@@ -106,14 +100,12 @@ ul.link li{padding: 0;margin: 0;}
 #menu .dropdown-inner {display: table;}
 #menu .dropdown-inner ul {display: table-cell;}
 #menu .dropdown-inner a {min-width: 160px;display: block;padding: 3px 20px;clear: both;line-height: 20px;color: #000;margin: 0 5px;}
-#menu li.dropdown:hover>a, #menu li.dropdown:focus>a, #menu li.dropdown:active>a{}
 
 #menu ul.nav li a{color: #666;padding: 14px 19px;font-size: 14px;letter-spacing: 2.8px;display: inline-block;font-weight: bold;text-transform: uppercase}
 #menu ul.nav li::after{content: "-";padding: 0 5px;font-size: 28px;line-height: 1;}
 
 #menu ul.nav li:last-child::after,
 #menu ul.nav .dropdown-menu li::after{content:'';padding: 0px;display:none}
-#menu ul.nav li.dropdown a{}
 #menu .nav > li > a:hover, #menu .nav > li > a:focus{background: none;color: #E94C3F;}
 
 #menu i.fa{font-size: 13px;padding-bottom: 2px;}
@@ -156,7 +148,6 @@ ul.link li{padding: 0;margin: 0;}
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------------Content-------------------------------- */
 /* ---------------------------------------------------------------------------- */
-#page-content{}
 
 /* ---HomePage--- */
 .box-content {padding: 50px 0 30px;}
@@ -169,7 +160,6 @@ article{background: #ffffff; color: #3F3F3F; margin: 50px 0;border-bottom: 1px s
 article:last-child{border-bottom: none;}
 article:after, article:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
 article .post-thumbnail-wrap {text-align: center;width: 100%;margin-bottom: 10px;}
-article .post-thumbnail-wrap img {}
 article h2.entry-title{font-size: 35px;margin: 20px 0 10px;font-weight: 300;}
 article h2.entry-title a{color: #131313;}
 article h2.entry-title a:hover{color: #555}
@@ -202,7 +192,6 @@ article .entry-content ol {float: left;text-align: justify;margin: 10px 50px;lis
 /* ------------------------------------Footer---------------------------------- */
 /* ---------------------------------------------------------------------------- */
 footer{color: #666;}
-footer.main-footer{}
 footer.sub-footer{border-top: 1px solid #ccc;}
 footer ul {padding: 0;}
 footer ul li{list-style: none;}
@@ -224,7 +213,6 @@ footer .copyright{padding: 15px 0;font-size: 16px;}
 .portfolio-box:hover:after {transform:scale(1,1);-moz-transform:scale(1,1);-webkit-transform:scale(1,1);-ms-transform:scale(1,1);}
 
 /****** Zoom Effect ******/
-.portfolio-box.zoom-effect .portfolio-box-caption{}
 .portfolio-box.zoom-effect img{-webkit-transition: 0.5s ease;transition: 0.5s ease;width: 100%;}
 .portfolio-box:hover.zoom-effect img{-webkit-transform:scale(1.1); /* Safari and Chrome */-moz-transform:scale(1.1); /* Firefox */-ms-transform:scale(1.1); /* IE 9 */-o-transform:scale(1.1); /* Opera */transform:scale(1.1);}
 
@@ -269,3 +257,13 @@ a.btn:focus{outline: 0;}
 .btn-skin {padding: 9px 24px;color: #fff;background-color: #E94C3F;min-width: 110px;margin-bottom: 10px;}
 .btn-skin i.fa{padding-left: 5px;}
 .btn-skin:hover, .btn-skin:focus {color: #fff;background-color: #212121;}
+
+
+
+
+/* CV */
+
+.container-left{
+    padding: 10px;
+    background-color: #003666;
+}

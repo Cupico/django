@@ -1,0 +1,37 @@
+.container-cv {
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  background-color: transparent;
+}
+
+/* left cv */
+
+.background-left {
+  background-color: #043461;
+  padding: 30px;
+  color: white;
+}
+
+.cv-container-left img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.div-contact{
+    margin-top: 30px;
+}
+
+/* right cv */
+
+.background-right {
+  background-color: white;
+  padding: 30px;
+}
+
+.cv-container-right {
+  color: black;
+  background-color: white;
+}
