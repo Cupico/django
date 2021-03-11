@@ -10,7 +10,7 @@ Arborescence générale:
 | |
 |--Blog
 | |
-|--Conatact
+|--Contact
 | |
 |--mysite
 |
